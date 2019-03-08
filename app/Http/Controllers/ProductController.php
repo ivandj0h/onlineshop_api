@@ -1,11 +1,11 @@
 <?php 
 
-namespace AppHttpControllers;
+namespace App\Http\Controllers;
 
 use AppProduct;
 use IlluminateHttpRequest;
 
-class ProductController extends Controller  {
+class ProductController extends Controller{
 
     public function index(){         
         $products = Product::all();

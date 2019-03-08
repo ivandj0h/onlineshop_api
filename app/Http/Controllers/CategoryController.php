@@ -1,6 +1,6 @@
 <?php 
 
-namespace AppHttpControllers;
+namespace App\Http\Controllers;
 
 use AppCategory;
 use IlluminateHttpRequest;
