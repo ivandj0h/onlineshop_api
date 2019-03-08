@@ -11,18 +11,18 @@
 |
 */
 
-$app->group(['prefix' => 'api'], function() use ($app) {     
+$router->group(['prefix' => 'api'], function() use ($router) {     
     //product route     
-    $app->get('products', 'ProductController@index');
-    $app->get('products/{id}', 'ProductController@show');
-    $app->post('products', 'ProductController@store');
-    $app->put('products/{id}', 'ProductController@update');
-    $app->delete('products/{id}', 'ProductController@delete');
-    $app->get('categories', 'CategoryController@index');
-    $app->get('categories/{id}', 'CategoryController@show');
-    $app->post('categories', 'CategoryController@store');
-    $app->put('categories/{id}', 'CategoryController@update');
-    $app->delete('categories/{id}', 'CategoryController@delete'); 
+    $router->get('products', 'ProductController@index');
+    $router->get('products/{id}', 'ProductController@show');
+    $router->post('products', 'ProductController@store');
+    $router->put('products/{id}', 'ProductController@update');
+    $router->delete('products/{id}', 'ProductController@delete');
+    $router->get('categories', 'CategoryController@index');
+    $router->get('categories/{id}', 'CategoryController@show');
+    $router->post('categories', 'CategoryController@store');
+    $router->put('categories/{id}', 'CategoryController@update');
+    $router->delete('categories/{id}', 'CategoryController@delete'); 
 });
 
 // $router->get('/', function () use ($router) {
